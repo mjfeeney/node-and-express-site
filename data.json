@@ -1,0 +1,38 @@
+{
+    "projects": [
+        {
+            id: 0,
+            project_name: "Project 1",
+            description: "Short description of the project",
+            technologies: [
+                "HTML",
+                "JavaScript"
+            ],
+            live_link: "link to live version of project",
+            github_link: "link to github",
+            image_urls: [
+                "project_img1",
+                "project_img2",
+                "project_img3"
+            ]
+        },
+        {
+            id: 1,
+            project_name: "Project 2",
+            description: "Short description of the project",
+            technologies: [
+                "CSS",
+                "Express"
+            ],
+            live_link: "link to live version of project",
+            github_link: "link to github",
+            image_urls: [
+                "project_img1",
+                "project_img2",
+                "project_img3"
+            ]
+        }
+
+    ]
+}
+    

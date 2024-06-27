@@ -5,14 +5,29 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 INDEX PAGE - Work In Progress, Node/Express Site, Project #6
+    h1 My JavaScript TechDegree Portfolio
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p In this project, I created a portfolio site to showcase the projects I've built thus far in my JavaScript TechDegree. The site will contain a modern landing page, an about page where you'll have a chance to share contact info, and a series of project pages to show off and detail at least the first few projects from this Techdegree.
+
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
+      .cell
+          a(href='#')
+            img.thumbnail(src=`${projectImage1}`, alt='')
+            h5 #{projectName}
+
+      .cell
+          a(href='#')
+            img.thumbnail(src=`${projectImage1}`, alt='')
+            h5 #{projectName}
+      
+      .cell
+          a(href='#')
+            img.thumbnail(src=`${projectImage1}`, alt='')
+            h5 #{projectName}
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       
@@ -20,9 +35,5 @@ block content
           //- The paths in the link's href and img's src attributes
           //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
           //- The project title for the h5 element's text
-
-        .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
+   
 

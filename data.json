@@ -1,38 +1,85 @@
 {
     "projects": [
         {
-            id: 0,
-            project_name: "Project 1",
-            description: "Short description of the project",
-            technologies: [
-                "HTML",
-                "JavaScript"
+            "id": 1,
+            "project_name": "Random Quote Generator",
+            "description": "A program that displays a randomly selected quote each time the user clicks a button.",
+            "technologies": [
+                "JavaScript",
+                "CSS"
             ],
-            live_link: "link to live version of project",
-            github_link: "link to github",
-            image_urls: [
-                "project_img1",
-                "project_img2",
-                "project_img3"
+            "live_link": "http://mattfeeney.us/techDegree/TechDegree-Project-1/index.html",
+            "github_link": "https://github.com/mjfeeney/TechDegree-Project-1",
+            "image_urls": [
+                "/static/images/random_quotes_img1.png",
+                "/static/images/random_quotes_img2.png"
             ]
         },
         {
-            id: 1,
-            project_name: "Project 2",
-            description: "Short description of the project",
-            technologies: [
-                "CSS",
-                "Express"
+            "id": 2,
+            "project_name": "Data Pagination and Filtering",
+            "description": "A project to practice page filtering. JavaScript used to display students from an array of objects and paginate pages accordingly. Search feature also added to allow for real time name searching.",
+            "technologies": [
+                "JavaScript",
+                "CSS"
             ],
-            live_link: "link to live version of project",
-            github_link: "link to github",
-            image_urls: [
-                "project_img1",
-                "project_img2",
-                "project_img3"
+            "live_link": "http://mattfeeney.us/techDegree/Data-Pagination-and-Filtering/index.html",
+            "github_link": "https://github.com/mjfeeney/Data-Pagination-and-Filtering",
+            "image_urls": [
+                "/static/images/data_pagination_img1.png",
+                "/static/images/data_pagination_img2.png",
+                "/static/images/data_pagination_img3.png",
+                "/static/images/data_pagination_img4.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Interactive Form",
+            "description": "Enhanced a form using JavaScript so that it’s engaging, interactive, and easy to use.",
+            "technologies": [
+                "JavaScript"
+            ],
+            "live_link": "http://mattfeeney.us/techDegree/Interactive-Form-2023/index.html",
+            "github_link": "https://github.com/mjfeeney/Interactive-Form-2023",
+            "image_urls": [
+                "/static/images/interactive_form_img1.png",
+                "/static/images/interactive_form_img2.png",
+                "/static/images/interactive_form_img3.png",
+                "/static/images/interactive_form_img4.png"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Game Show App",
+            "description": "A browser-based, word guessing game using JavaScript and Object-Oriented Programming to select a random, hidden phrase.",
+            "technologies": [
+                "JavaScript"
+            ],
+            "live_link": "http://mattfeeney.us/techDegree/Game-Show-App/index.html",
+            "github_link": "https://github.com/mjfeeney/Game-Show-App",
+            "image_urls": [
+                "/static/images/game_show_img1.png",
+                "/static/images/game_show_img2.png",
+                "/static/images/game_show_img3.png"
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "Public API Requests",
+            "description": "Using the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees,” a prototype for a fictional company employee directory is built.",
+            "technologies": [
+                "JavaScript",
+                "API"
+            ],
+            "live_link": "http://mattfeeney.us/techDegree/Public-API-Requests/index.html",
+            "github_link": "https://github.com/mjfeeney/Public-API-Requests",
+            "image_urls": [
+                "/static/images/public_api_img1.png",
+                "/static/images/public_api_img2.png",
+                "/static/images/public_api_img3.png"
             ]
         }
-
+        
     ]
 }
     

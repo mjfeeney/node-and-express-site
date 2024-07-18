@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": 1,
+            "id": 0,
             "project_name": "Random Quote Generator",
             "description": "A program that displays a randomly selected quote each time the user clicks a button.",
             "technologies": [
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 1,
             "project_name": "Data Pagination and Filtering",
             "description": "A project to practice page filtering. JavaScript used to display students from an array of objects and paginate pages accordingly. Search feature also added to allow for real time name searching.",
             "technologies": [
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 2,
             "project_name": "Interactive Form",
             "description": "Enhanced a form using JavaScript so that it’s engaging, interactive, and easy to use.",
             "technologies": [
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 3,
             "project_name": "Game Show App",
             "description": "A browser-based, word guessing game using JavaScript and Object-Oriented Programming to select a random, hidden phrase.",
             "technologies": [
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 4,
             "project_name": "Public API Requests",
             "description": "Using the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees,” a prototype for a fictional company employee directory is built.",
             "technologies": [

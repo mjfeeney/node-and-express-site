@@ -11,33 +11,29 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-        //- Use the info in your data file and the comments below to complete this template
+        h1 #{projectName}
 
-        //- Use interpolation to dynamically add the project title
-        h1 Project Name
-
-        //- Use interpolation to dynamically add the project description
-        p Description
+        p #{projectDesc}
 
       .project-tech-links-box.box
         h6 Technologies
+
         ul
+          each tech in technologies 
+            li= tech
 
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          li HTML
-          li CSS
-          li JavaScript
+        a.btn-link(href=`${liveDemo}`, target= "_blank") Live Demo
+        a.btn-link(href=`${gitHubLink}`, target= "_blank") GitHub Repo
 
-        //- Add the href values to the links below
-        a.btn-link(href='') Live Demo
-        a.btn-link(href='') GitHub Repo
+        
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
-      img.project-img(src='https://placehold.it/1200x550', alt='')
+      img.project-img(src=`${projectImage1}`, alt=`${screenshotAlt}`)
+      img.project-img(src=`${projectImage2}`, alt=`${screenshotAlt}`)
+      
+      if projectImage3
+        img.project-img(src=`${projectImage3}`, alt=`${screenshotAlt}`)
 
     nav.nav
       a(href='/')

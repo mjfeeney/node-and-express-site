@@ -30,21 +30,29 @@ app.get('/about', (req, res) => {
 
 
 // PROJECT pages
-app.get('/project/:id', (req, res) => {
+app.get('/project/:id', (req, res, next) => {
   const singleProj = projects[req.params.id];
 
-  res.render('project', { 
-    projectName: singleProj.project_name,
-    projectDesc: singleProj.description,
-    technologies: singleProj.technologies,
-    projectImage1: singleProj.image_urls[0],
-    projectImage2: singleProj.image_urls[1],
-    projectImage3: singleProj.image_urls[2],
-    screenshotAlt: "A screenshot of the project",
-    liveDemo: singleProj.live_link,
-    gitHubLink: singleProj.github_link
-    
-  });
+  if(singleProj) {
+    res.render('project', { 
+      projectName: singleProj.project_name,
+      projectDesc: singleProj.description,
+      technologies: singleProj.technologies,
+      projectImage1: singleProj.image_urls[0],
+      projectImage2: singleProj.image_urls[1],
+      projectImage3: singleProj.image_urls[2],
+      screenshotAlt: "A screenshot of the project",
+      liveDemo: singleProj.live_link,
+      gitHubLink: singleProj.github_link
+      
+    });
+  } else {
+    const err = new Error("This project does not exist.");
+    err.status = 404;
+    console.log("404 error. This project does not exist.");
+    next(err);
+  };
+  
 });
 
 
